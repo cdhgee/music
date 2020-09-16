@@ -5,20 +5,20 @@ BassCMusic = \relative c {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 51 { r1 }
+  \repeat unfold 51 { R1 }
 
   \tempo "Animato"
-  \repeat unfold 4 { r1 }
+  \repeat unfold 4 { R1 }
   \bar "||"
   \key g \major
 
   % E
   \mark \default
-  \repeat unfold 11 { r1 }
+  \repeat unfold 11 { R1 }
 
   % F
   \mark \default
-  r1 |
+  R1 |
   a4\ff\accent a2 fis'4 |
   e4\accent a,4 r2 |
   a4\accent a8 e'8 \tuplet 3/2 { fis8\accent fis8 fis8 } e8. d16 |
@@ -26,7 +26,7 @@ BassCMusic = \relative c {
   r4 e'8\accent a,8\staccato r4 e'8\accent a,8\staccato |
   r4 e'8\accent a,8\staccato r4 a4~\accent |
   a4 d4 r2 |
-  \repeat unfold 6 { r1 }
+  \repeat unfold 6 { R1 }
 
   \bar "||"
   \key ges \major
@@ -34,8 +34,8 @@ BassCMusic = \relative c {
   % G
   \mark \default
   \tempo "Slower"
-  r1 |
-  r2 r4 des4\p_\markup { \italic dolce } |
+  R1 |
+  r2 r4 des4\p\dolce |
   ges8 ( f8 ) ees8 des8\< aes'4\! ces8. ces16 |
   ces8\< ( bes8\> aes8\! ) ges8 aes4 bes8 ces8 |
   bes4 ( des,4 ees4 ) f8 aes8 |
@@ -50,8 +50,8 @@ BassCMusic = \relative c {
 
   \tempo "Alla marcia"
   f2\! r2 |
-  r1 |
-  r2 c2~\p_\markup { \italic dolce } |
+  R1 |
+  r2 c2~\p\dolce |
   c2 r2 |
   r2 f2~\mf\< |
   f4\! c8.\cresc c16\! a'4 f4 |
@@ -69,7 +69,7 @@ BassCMusic = \relative c {
   ees8 c8 ees4~\accent ( ees8 d8 ) c4 |
   \tempo "a tempo"
   bes2. r4 |
-  \repeat unfold 4 { r1 }
+  \repeat unfold 4 { R1 }
   \bar "|."
 
 }

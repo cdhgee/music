@@ -1,8 +1,12 @@
-topLH = \new Voice = "topLH" \relative c {
+topLH = \relative c {
 
-  \voiceOne
-
-  \repeat unfold 7 { s1 } |
+  r2 s2 |
+  s2 s4 s8 r8 |
+  r2 s2 |
+  s2 s4 s8 r8 |
+  r2 s2 |
+  s1 |
+  s1 |
   s2 s4 <a' c ees fis>4\tenuto |
   r4 <g d' g>8.. <c ees fis>32 <bes d g>4 s4 |
   s2 s4 <a f'>8 ees'8 |
@@ -83,14 +87,14 @@ topLH = \new Voice = "topLH" \relative c {
   <d g b>4 r4 r2 |
   <d g b d>4 r4 r2 |
   <d g b d>8 r8 r4 r2 |
-  r1\fermata |
+  R1\fermataMarkup |
   r2 r4 <g b d>4 |
   <e g a cis>1~ |
   <e g a cis>4 r4 r2 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
 
   % F
   \mark \default

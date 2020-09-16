@@ -5,7 +5,7 @@ AltoATwoMusic = \relative c' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 10 { r1 }
+  \repeat unfold 10 { R1 }
   % A
   r2 f4\f bes4 |
   b2.\< r4\! |
@@ -19,11 +19,11 @@ AltoATwoMusic = \relative c' {
   \mark \default
   % B
   f2. r4 |
-  r1 |
+  R1 |
   \bar "||"
   \key f \major
-  r1 |
-  r1 |
+  R1 |
+  R1 |
   r2 r4 f4\mf |
   d4 f4\< g4\! a8 f8 |
   bes2 c,4 g'4 |
@@ -39,10 +39,12 @@ AltoATwoMusic = \relative c' {
   \mark \default
   % C
   \tempo "a tempo" fis2.\ff r4 |
-  r1 |
+  R1 |
   \bar "||"
   \key bes \major
   \break
+
+  % Include this rest to force the printing of partial staff following the key change
   r1
 
 }

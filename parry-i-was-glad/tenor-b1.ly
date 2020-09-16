@@ -5,7 +5,7 @@ TenorBOneMusic = \relative c' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 36 { r1 }
+  \repeat unfold 35 { R1 }
 
 
   \key bes \major
@@ -17,14 +17,14 @@ TenorBOneMusic = \relative c' {
   d4 ees4 r2 |
   r4 g4\< g4 f4\! |
   ees4.\accent \tempo "rit." ees8 ees2 |
-  r1 |
+  R1 |
   r4 c2\ff f,4 |
 
   % D
   \mark \default
   \tempo "a tempo"
   d'2. r4 |
-  \repeat unfold 5 { r1 }
+  \repeat unfold 5 { R1 }
   \bar "||"
 
 }

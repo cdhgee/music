@@ -5,7 +5,7 @@ BassATwoMusic = \relative c' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 10 { r1 }
+  \repeat unfold 10 { R1 }
 
   % A
   \mark \default
@@ -22,12 +22,12 @@ BassATwoMusic = \relative c' {
   % B
   \mark \default
   f2. r4 |
-  r1 |
+  R1 |
   \bar "||"
   \key f \major
-  r1 |
+  R1 |
   r2 r4 f4\mf\cresc |
-  g4\! a4 b4 c8 a8 |
+  g4\! a4 bes4 c8 a8 |
   d2 g,4 f4 |
   f4. ees8 ees2 |
   r4 a,4\cresc bes4\! c4 |
@@ -42,10 +42,12 @@ BassATwoMusic = \relative c' {
   % C
   \mark \default
   d,2.\ff r4 |
-  r1 |
+  R1 |
   \bar "||"
   \key bes \major
   \break
+
+  % Include this rest to force the printing of partial staff following the key change
   r1
 
 }

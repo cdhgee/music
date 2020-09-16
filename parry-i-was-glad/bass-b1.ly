@@ -5,7 +5,7 @@ BassBOneMusic = \relative c' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 36 { r1 }
+  \repeat unfold 35 { R1 }
 
   \key bes \major
   r4 d,4\f d'2~\accent |
@@ -16,13 +16,13 @@ BassBOneMusic = \relative c' {
   bes4 ees,4 r2 |
   r4 ees4\< ees4 d4\! |
   c4.\accent c'8 c2 |
-  r1 |
+  R1 |
   r4 f,2\ff f4 |
 
   % D
   \mark \default
   f2. r4 |
-  \repeat unfold 5 { r1 }
+  \repeat unfold 5 { R1 }
   \bar "||"
 
 

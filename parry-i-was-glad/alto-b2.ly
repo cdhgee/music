@@ -5,7 +5,7 @@ AltoBTwoMusic = \relative c' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 36 { r1 }
+  \repeat unfold 35 { R1 }
 
   \key bes \major
   r2 r4 fis4\mf\cresc |
@@ -22,7 +22,7 @@ AltoBTwoMusic = \relative c' {
   % D
   \mark \default
   \tempo "a tempo" bes2. r4 |
-  \repeat unfold 5 { r1 }
+  \repeat unfold 5 { R1 }
   \bar "||"
 
 }

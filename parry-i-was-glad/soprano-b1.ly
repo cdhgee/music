@@ -5,7 +5,7 @@ SopranoBOneMusic = \relative c'' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 36 { r1 }
+  \repeat unfold 35 { R1 }
 
 
   \key bes \major
@@ -17,14 +17,14 @@ SopranoBOneMusic = \relative c'' {
   f4 ees4 r2 |
   r4 bes4\< ees4 g4\! |
   g4.\accent c,8 c2 |
-  r1 |
+  R1 |
   r4 c2\ff f4 |
 
   % D
   \mark \default
   \tempo "a tempo"
   f2. r4 |
-  \repeat unfold 5 { r1 } |
+  \repeat unfold 5 { R1 } |
   \bar "||"
 
 }

@@ -5,7 +5,7 @@ SopranoBTwoMusic = \relative c'' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 36 { r1 }
+  \repeat unfold 35 { R1 }
 
 
   \key bes \major
@@ -24,7 +24,7 @@ SopranoBTwoMusic = \relative c'' {
   \mark \default
   \tempo "a tempo"
   f2. r4 |
-  \repeat unfold 5 { r1 }
+  \repeat unfold 5 { R1 }
   \bar "||"
 
 }

@@ -3,23 +3,25 @@
 \include "organ-lower-top.ly"
 \include "organ-lower-bottom.ly"
 
-organRH = \relative c'' {
+organRH = {
+
   \clef treble
   \key bes \major
   \time 4/4
   \numericTimeSignature
 
-
   <<
 
-    \topRH
-    \bottomRH
+    \new Voice { \voiceOne \topRH  }
+    \new Voice { \voiceTwo \bottomRH }
+
 
   >>
 
 }
 
-organLH = \relative c {
+organLH = {
+
   \clef bass
   \key bes \major
   \time 4/4
@@ -27,9 +29,8 @@ organLH = \relative c {
 
   <<
 
-    \topLH
-    \bottomLH
-
+    \new Voice { \voiceOne \topLH  }
+    \new Voice { \voiceTwo \bottomLH }
 
   >>
 

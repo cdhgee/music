@@ -5,7 +5,7 @@ SopranoATwoMusic = \relative c'' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 10 { r1 }
+  \repeat unfold 10 { R1 }
 
   % A
   \mark \default
@@ -21,7 +21,7 @@ SopranoATwoMusic = \relative c'' {
   % B
   \mark \default
   a2. r4 |
-  r1 |
+  R1 |
   \bar "||"
   \key f \major
   r4 a4\mf\< bes4 c4 |
@@ -41,10 +41,12 @@ SopranoATwoMusic = \relative c'' {
   % C
   \mark \default
   \tempo "a tempo" d2.\ff r4 |
-  r1 |
+  R1 |
   \bar "||"
   \key bes \major
   \break
+
+  % Include this rest to force the printing of partial staff following the key change
   r1
 
 }

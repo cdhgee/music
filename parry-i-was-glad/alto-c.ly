@@ -6,21 +6,21 @@ AltoCMusic = \relative c' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 51 { r1 }
+  \repeat unfold 51 { R1 }
 
   \tempo "Animato"
   % Vivats
-  \repeat unfold 4 { r1 }
+  \repeat unfold 4 { R1 }
   \bar "||"
 
   \mark \default
   % E
   \key g \major
-  \repeat unfold 11 { r1 } |
+  \repeat unfold 11 { R1 } |
 
   \mark \default
   % F
-  r1 |
+  R1 |
   a'4\accent\ff a2 fis4 |
   e4\accent a4 r2 |
   a4\accent a8\accent e8 \tuplet 3/2 { fis8\accent fis8 fis8 } e8. d16 |
@@ -28,15 +28,15 @@ AltoCMusic = \relative c' {
   r4 e'8\accent a,8\staccato r4 e'8\accent a,8\staccato |
   r4 e'8\accent a,8\staccato r4 a4~\accent |
   a4 <d, d'>4 r2 |
-  \repeat unfold 6 { r1 }
+  \repeat unfold 6 { R1 }
   \bar "||"
   \key ges \major
 
   \mark \default
   % G
   \tempo "Slower"
-  r1 |
-  r2 r4 f4\p_\markup { \italic dolce } |
+  R1 |
+  r2 r4 f4\p\dolce |
   ges4 ges8.\< ges16 aes4\! aes8 des,8 |
   ges4\p ( bes4~ bes8 aes8 ) ges8 ( f8 ) |
   ges4 ges8 ges8 des4 des4~ |
@@ -50,8 +50,8 @@ AltoCMusic = \relative c' {
   \key bes \major
   \tempo "Alla marcia"
   c2 r2 |
-  r1 |
-  r2 g'2~\p_\markup { \italic dolce } |
+  R1 |
+  r2 g'2~\p\dolce |
   g2 r2 |
   r2 ees2~\mf\< |
   ees4 ees8.\! ees16 f4 ees4 |
@@ -68,7 +68,7 @@ AltoCMusic = \relative c' {
   gis8. a16 a2 f4 |
   a4 ( g2 ) f4 |
   f4. bes8 bes4 r4 |
-  \repeat unfold 4 { s1 }
+  \repeat unfold 4 { R1 }
   \bar "|."
 
 }

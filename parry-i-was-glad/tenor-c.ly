@@ -5,20 +5,20 @@ TenorCMusic = \relative c' {
   \time 4/4
   \numericTimeSignature
 
-  \repeat unfold 51 { r1 }
+  \repeat unfold 51 { R1 }
 
   \tempo "Animato"
-  \repeat unfold 4 { r1 }
+  \repeat unfold 4 { R1 }
   \bar "||"
   \key g \major
 
   \mark \default
   % E
-  \repeat unfold 11 { r1 }
+  \repeat unfold 11 { R1 }
   \mark \default
   % F
   % do something with this to combine with T 1
-  r1 |
+  R1 |
   a'4\ff\accent a,2 fis'4 |
   e4\accent a,4 r2 |
   a'4\accent a,8 e'8 \tuplet 3/2 { fis8\accent fis8 fis8 } e8. d16 |
@@ -26,34 +26,34 @@ TenorCMusic = \relative c' {
   r4 e'8\accent a,8\staccato r4 e'8\accent a,8\staccato |
   r4 e'8\accent a,8\staccato r4 a4~\accent |
   a4 d4 r2 |
-  \repeat unfold 6 { r1 }
+  \repeat unfold 6 { R1 }
   \bar "||"
   \key ges \major
 
   % H
   \mark \default
   \tempo "Slower"
-  r1 |
-  r2 r4 ces4\p_\markup { \italic dolce } |
-  bes4 ges8. ges'16\< ges8( f8\!) ees8 des8 |
+  R1 |
+  r2 r4 ces4\p\dolce |
+  bes4 ges8. ges'16\< ges8 ( f8\! ) ees8 des8 |
   des4.\p bes8 ces4 bes8 aes8 |
-  ges4( des'2) ces8 des8 |
-  bes8( aes8 ges2) f4 |
+  ges4 ( des'2 ) ces8 des8 |
+  bes8 ( aes8 ges2 ) f4 |
   r4 des'8\p ees8 des4 bes8 ges8 |
-  aes8( bes8 ces4) ees,2~ |
+  aes8 ( bes8 ces4 ) ees,2~ |
   %\set crescendoText = \markup { \italic "poco a poco cresc." }
   ees4\cresc ees'8\! fes8 ees4 ces8 aes8 |
-  bes8( ces8 des4) ges,2 |
-  r4 des'4 c4.\dim( bes8\!) |
+  bes8 ( ces8 des4 ) ges,2 |
+  r4 des'4 c4.\dim ( bes8\! ) |
   \bar "||"
   \key bes \major
   \tempo "Alla marcia"
   a2 r2 |
-  r1 |
-  r2 bes2~\p_\markup { \italic dolce } |
+  R1 |
+  r2 bes2~\p\dolce |
   bes2 r2 |
-  r2 a4\mf\< g4\! |
-  c4( bes4\cresc a4\!) f'4 |
+  r2 a4\mf\< g4 |
+  c4\! ( bes4\cresc a4\! ) f'4 |
   f2. aes,4\f\< |
   aes'4.\! f8 des2~ |
   des4 des4 ges2~ |
@@ -68,7 +68,7 @@ TenorCMusic = \relative c' {
   a4 c4 ees4. f8 |
   \tempo "a tempo"
   d2. r4 |
-  \repeat unfold 4 { r1 }
+  \repeat unfold 4 { R1 }
   \bar "|."
 
 }

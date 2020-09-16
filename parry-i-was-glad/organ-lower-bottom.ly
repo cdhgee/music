@@ -1,6 +1,4 @@
-bottomLH = \new Voice = "bottomLH" \relative c {
-
-  \voiceTwo
+bottomLH = \relative c {
 
   r2 <f, f'>8.. <g g'>32 <g g'>8.. <a a'>32 |
   <a a'>4 ( <bes bes'>8 ) <g g'>8\staccato <a c f a>4. r8 |

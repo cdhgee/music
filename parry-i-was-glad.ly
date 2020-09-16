@@ -3,7 +3,9 @@
 #(ly:set-option 'relative-includes #t)
 
 \include "common/functions.ly"
+\include "common/markup.ly"
 
+\include "parry-i-was-glad/queens-scholars.ly"
 \include "parry-i-was-glad/soprano.ly"
 \include "parry-i-was-glad/alto.ly"
 \include "parry-i-was-glad/tenor.ly"
@@ -20,6 +22,9 @@
 
 \score {
   <<
+
+    % First section (A-C) - SSAATTBB double choir
+
     \new ChoirStaff <<
 
       \make-staff-with-lyrics "Soprano 1" "S 1" "SA1" \SopranoAOneMusic \SopranoAOneWords
@@ -32,6 +37,9 @@
       \make-staff-with-lyrics "Bass 2" "B 2" "BA2" \BassATwoMusic \BassATwoWords
 
     >>
+
+    % Second section (D) - SATBSATB double choir
+
     \new ChoirStaff <<
 
       \make-staff-with-lyrics "Soprano 1" "S 1" "SB1" \SopranoBOneMusic \SopranoBOneWords
@@ -48,6 +56,9 @@
       \make-staff-with-lyrics "Bass 2" "B 2" "BB2" \BassBTwoMusic \BassBTwoWords
 
     >>
+
+    % Third section (E-I) - SATB semi choir then full choir
+    \make-staff-with-lyrics "Queen's Scholars" "QS" "QSC" \QueensScholarsMusic \QueensScholarsWords
     \new ChoirStaff <<
 
       \make-staff-with-lyrics "Soprano" "S" "SC" \SopranoCMusic \SopranoCWords
@@ -60,11 +71,18 @@
     \new PianoStaff \with {
       instrumentName = #"Organ"
       shortInstrumentName = #"Org."
-    }
-    <<
+    } <<
 
-      \new Staff = "upper" \organRH
-      \new Staff = "lower" \organLH
+      \new Staff = "upper" \with {
+        \consists "Merge_rests_engraver"
+      } {
+        \organRH
+      }
+      \new Staff = "lower" \with {
+        \consists "Merge_rests_engraver"
+      } {
+        \organLH
+      }
 
     >>
 
@@ -78,6 +96,7 @@
     }
     \context {
       \Score
+      markFormatter = #format-mark-box-alphabet
       \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
     }
     \context {
