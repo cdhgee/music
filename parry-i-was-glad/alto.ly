@@ -1,0 +1,5 @@
+\include "alto-a1.ly"
+\include "alto-a2.ly"
+\include "alto-b1.ly"
+\include "alto-b2.ly"
+\include "alto-c.ly"

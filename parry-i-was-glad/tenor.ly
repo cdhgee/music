@@ -1,0 +1,5 @@
+\include "tenor-a1.ly"
+\include "tenor-a2.ly"
+\include "tenor-b1.ly"
+\include "tenor-b2.ly"
+\include "tenor-c.ly"
