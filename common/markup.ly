@@ -1,0 +1,3 @@
+dolce = ^\markup {
+  \italic dolce
+}
